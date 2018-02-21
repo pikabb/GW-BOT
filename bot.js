@@ -1,11 +1,12 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-client.on('ready', () => {
+
+bot.on('ready', () => {
     console.log('successfully launched!')
 });
+bot.on('message', message => {
 
-client.on('message', message => {
 
     if(message.content == 'pika') {
 
@@ -55,8 +56,28 @@ client.on('message', message => {
 
     if(message.content == 'help') {
 
-        message.channel.sendMessage('My current commands are: pika, ian, person above, person below, person reading, traps, trap card, gay, infinite reverse');
+        message.channel.sendMessage('My current commands are: pika, ian, person above, person below, person reading, traps, trap card, gay, infinite reverse, shit. Use `!` before typing in the commands!');
+    }
+
+    if(message.content == 'BEGONE') {
+
+        message.channel.sendMessage('***THOT***');
+    }
+
+    if(message.content == '***RISE PIKA MAN!***') {
+
+        message.channel.sendMessage('PIKA!!!');
+    }
+
+    if(message.content == 'shit') {
+
+        message.channel.sendMessage('https://media.discordapp.net/attachments/342748315315732480/412094393504497664/shirt.gif?width=261&height=468');
+    }
+
+    if(message.content == 'nathaniel beard go to the office with your father for cussing') {
+
+        message.channel.sendMessage('https://media.discordapp.net/attachments/342748315315732480/412094393504497664/shirt.gif?width=261&height=468');
     }
 });
 
-bot.login(process.env.BOT_TOKEN);
+bot.login('Mzk2ODgyMTQ3MzMzNjM2MDk3.DTHJ-g.vJ0VTsgr1IMa6BAnlzqp668JEjw')
