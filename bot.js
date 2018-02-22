@@ -3,6 +3,8 @@ const bot = new Discord.Client();
 bot.on('ready', () => {
 console.log('successfully launched!')
 });
+int count = 0;
+count++
 bot.on('message', message => {
 if (message.author.bot) return;
 
@@ -82,6 +84,12 @@ if (message.author.bot) return;
            
             message.channel.sendMessage(' You MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOST FEENESH')
        }
+    
+    if(message.content == '*count') {
+           
+            message.channel.sendMessage(count)
+       }
+
 
     if(message.content == '*nathaniel beard go to the office with your father for cussing') {
 
