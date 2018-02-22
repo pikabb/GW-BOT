@@ -73,7 +73,12 @@ if (message.author.bot) return;
         message.channel.sendMessage('https://media.discordapp.net/attachments/342748315315732480/412094393504497664/shirt.gif?width=261&height=468');
     }
     
-       if(message.content == '*Doctora Wark') {
+       if(message.content == '*doctora wark') {
+           
+            message.channel.sendMessage(' You MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOST FINISH')
+       }
+    
+ if(message.content == '*wark') {
            
             message.channel.sendMessage(' You MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOST FINISH')
        }
