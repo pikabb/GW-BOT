@@ -72,6 +72,11 @@ if (message.author.bot) return;
 
         message.channel.sendMessage('https://media.discordapp.net/attachments/342748315315732480/412094393504497664/shirt.gif?width=261&height=468');
     }
+    
+       if(message.content == '*Doctora Wark') {
+           
+            message.channel.sendMessage(' You MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOST FINISH')
+       }
 
     if(message.content == '*nathaniel beard go to the office with your father for cussing') {
 
