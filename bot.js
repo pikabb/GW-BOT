@@ -24,12 +24,12 @@ if (message.author.bot) return;
 
     if(message.content == '*person above') {
 
-        message.channel.sendMessage('triple gay');
+        message.channel.sendMessage('is triple gay');
     }
 
     if(message.content == '*person below') {
 
-        message.channel.sendMessage('triple gay');
+        message.channel.sendMessage('is triple gay');
     }
 
     if(message.content == '*traps') {
