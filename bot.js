@@ -87,7 +87,7 @@ if (message.author.bot) return;
     
     if(message.content == '*count') {
            
-            message.channel.sendMessage(count)
+            message.channel.sendMessage()
        }
 
 
