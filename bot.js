@@ -55,7 +55,7 @@ if (message.author.bot) return;
 
     if(message.content == '*help') {
 
-        message.channel.sendMessage('My current commands are: pika, ian, person above, person below, person reading, traps, trap card, gay, infinite reverse, shit, my avatar? Use `*` before typing in the commands!');
+        message.channel.sendMessage('My current commands are: pika, ian, person above, person below, person reading, traps, trap card, gay, infinite reverse, shit, my avatar?, doctora wark Use `*` before typing in the commands!');
     }
 
     if(message.content == '*BEGONE') {
@@ -73,14 +73,14 @@ if (message.author.bot) return;
         message.channel.sendMessage('https://media.discordapp.net/attachments/342748315315732480/412094393504497664/shirt.gif?width=261&height=468');
     }
     
-       if(message.content == '*doctora wark') {
+    if(message.content == '*doctora wark') {
            
-            message.channel.sendMessage(' You MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOST FINISH')
+            message.channel.sendMessage(' You MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOST FEENESH')
        }
     
- if(message.content == '*wark') {
+     if(message.content == '*wark') {
            
-            message.channel.sendMessage(' You MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOST FINISH')
+            message.channel.sendMessage(' You MOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOST FEENESH')
        }
 
     if(message.content == '*nathaniel beard go to the office with your father for cussing') {
