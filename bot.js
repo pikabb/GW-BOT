@@ -82,4 +82,4 @@ if (message.author.bot) return;
       }
 });
 
-bot.login('Mzk2ODgyMTQ3MzMzNjM2MDk3.DXCn6w.K4OchvRoKBL-CwP11B0C_-rSkrQ')
+bot.login('NDE2MzE1ODIyOTY1Nzg0NTc3.DXCtYw.SSBfHfjwDt0Z2fFz0SO9meDikyU')
