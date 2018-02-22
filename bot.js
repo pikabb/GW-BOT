@@ -74,6 +74,11 @@ bot.on('message', message => {
         message.channel.sendMessage('https://media.discordapp.net/attachments/342748315315732480/412094393504497664/shirt.gif?width=261&height=468');
     }
 
+    if(message.content == 'flood dat.') {
+
+        message.channel.sendMessage('@The Cuck#5116 u suk @The Cuck#5116 u suk @The Cuck#5116 u suk @The Cuck#5116 u suk @The Cuck#5116 u suk @The Cuck#5116 u suk @The Cuck#5116 u suk @The Cuck#5116 u suk @The Cuck#5116 u suk @The Cuck#5116 u suk');
+    }
+
     if(message.content == 'nathaniel beard go to the office with your father for cussing') {
 
         message.channel.sendMessage('https://media.discordapp.net/attachments/342748315315732480/412094393504497664/shirt.gif?width=261&height=468');
