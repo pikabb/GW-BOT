@@ -1,23 +1,21 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const tokens = require('./tokens.json');
-
 bot.on('ready', () => {
 console.log('successfully launched!')
 });
 
 bot.on('message', message => {
+if (message.author.bot) return;
+
+    if(message.content == '*hey!') {
+
+        message.channel.sendMessage('Listen!');
+    }
 
     if(message.content == '*pika') {
 
         message.channel.sendMessage('chu!');
     }
-	
-    if(message.content == '*hey') {
-
-        message.channel.sendMessage('Listen!');
-    }
-
 
     if(message.content == '*ian') {
 
@@ -62,7 +60,7 @@ bot.on('message', message => {
 
     if(message.content == '*help') {
 
-        message.channel.sendMessage('My current commands are: pika, ian, person above, person below, person reading, traps, trap card, gay, infinite reverse, shit, my avatar, doctora wark, hey  .....Use `*` before typing in the commands!');
+        message.channel.sendMessage('My current commands are: pika, ian, person above, person below, person reading, traps, trap card, gay, infinite reverse, shit, my avatar, doctora wark Use `*` before typing in the commands!');
     }
 
     if(message.content == '*BEGONE') {
