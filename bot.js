@@ -60,7 +60,7 @@ if (message.author.bot) return;
 
     if(message.content == '*help') {
 
-        message.channel.sendMessage('My current commands are: pika, ian, person above, person below, person reading, traps, trap card, gay, infinite reverse, shit, my avatar, doctora wark Use `*` before typing in the commands!');
+        message.channel.sendMessage('My current commands are: pika, ian, person above, person below, person reading, traps, trap card, gay, infinite reverse, shit, my avatar, doctora wark, hey..... Use `*` before typing in the commands!');
     }
 
     if(message.content == '*BEGONE') {
