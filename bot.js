@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 bot.on('ready', () => {
 console.log('successfully launched!')
 });
-
+//who ever the fuck you are messing with our bot. stop
 bot.on('message', message => {
 if (message.author.bot) return;
 
