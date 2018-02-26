@@ -83,7 +83,7 @@ if (msg.author.bot) return;
     }
     
     if (command == "eval") {
-        if (!msg.author.id == "228349229230325760") rturn msg.channel.send("Command only used by PainFX for testings.")
+        if (!msg.author.id == "228349229230325760") return msg.channel.send("Command only used by PainFX for testings.")
         
               try {
         const com = eval(message.content.split(" ").slice(1).join(" "));
