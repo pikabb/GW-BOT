@@ -86,10 +86,10 @@ if (msg.author.bot) return;
         if (!msg.author.id == "228349229230325760") return msg.channel.send("Command only used by PainFX for testings.")
         
               try {
-        const com = eval(message.content.split(" ").slice(1).join(" "));
-        message.channel.send('```\n' + com + '```');
+        const com = eval(msg.content.split(" ").slice(1).join(" "));
+        msg.channel.send('```\n' + com + '```');
       } catch(e) {
-        message.channel.send('```js\n' + e + '```');
+        msg.channel.send('```js\n' + e + '```');
       }
     }
     
