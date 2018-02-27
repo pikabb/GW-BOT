@@ -24,7 +24,6 @@ pika.on('message', msg => {
   })
 
   // Variables - Variables make it easy to call things, since it requires less typing.
-  let msg = msg.content.toUpperCase(); // This variable takes the message, and turns it all into uppercase so it isn't case sensitive.
   let sender = msg.author; // This variable takes the message, and finds who the author is.
   let args = msg.content.slice(prefix.length).trim().split(" "); // This variable slices off the prefix, then puts the rest in an array based off the spaces
   let cmd = args.shift().toLowerCase(); // This takes away the first object in the cont array, then puts it in this.
