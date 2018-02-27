@@ -28,7 +28,7 @@ pika.on('message', msg => {
     }
   })
 
-  if (cmd === "ping") {
+  if (msg.content === prefix + "ping") {
     msg.chanel.send(client.ping + "!")
   }
 });
