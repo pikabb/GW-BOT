@@ -12,7 +12,7 @@ pika.on('message', msg => {
   if (msg.channel.type != 'text') return msg.channel.send('Please use commands in the server!')
 
   // Global Settings - Prefix the can be changed
-  db.fetchOject(`guildPrefix_${msg.guild.id}`).then(i => {
+  db.fetchObject(`guildPrefix_${msg.guild.id}`).then(i => {
 
     let prefix;
 
