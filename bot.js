@@ -2,6 +2,9 @@ const Discord = require('discord.js');
 const pika = new Discord.Client();
 const db = require('quick.db');
 
+// Functions - File
+const func = require('./functions.js');
+
 // Ready - Listeners
 
 pika.on('ready', () => {
