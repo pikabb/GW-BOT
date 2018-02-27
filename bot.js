@@ -33,4 +33,4 @@ pika.on('message', msg => {
   }
 });
 
-pika.login(proess.env.TOKEN)
+pika.login(process.env.TOKEN)
