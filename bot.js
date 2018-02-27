@@ -30,11 +30,11 @@ pika.on('message', msg => {
 
         try {
             let commandFile = require(`./commands/${cmd}.js`); // This will assign that filename to commandFile
-            commandFile.run(pika, message, args, func, prefix); // This will add the functions, from the functions.js file into each commandFile.
+            commandFile.run(pika, msg, args, func, prefix); // This will add the functions, from the functions.js file into each commandFile.
         } catch (e) { // If an error occurs, this will run.
-            console.log(e.message); // This logs the error message
+            console.log(e.msg); // This logs the error message
         } finally { // This will run after the first two clear up
-            console.log(`${message.author.username} ran the command: ${cmd}`);
+            console.log(`${msg.author.username} ran the command: ${cmd}`);
         }
 });
 
