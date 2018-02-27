@@ -13,11 +13,6 @@ pika.on('message', msg => {
 
   // Global Settings - Prefix the can be changed
   db.fetchObject(`guildPrefix_${msg.guild.id}`).then(i => {
-    
-      // Variables - Variables make it easy to call things, since it requires less typing.
-  let sender = msg.author; // This variable takes the message, and finds who the author is.
-  let args = msg.content.slice(prefix.length).trim().split(" "); // This variable slices off the prefix, then puts the rest in an array based off the spaces
-  let cmd = args.shift().toLowerCase(); // This takes away the first object in the cont array, then puts it in this.
 
     let prefix;
 
@@ -27,6 +22,11 @@ pika.on('message', msg => {
       prefix = '*'
     }
   })
+  
+        // Variables - Variables make it easy to call things, since it requires less typing.
+  let sender = msg.author; // This variable takes the message, and finds who the author is.
+  let args = msg.content.slice(prefix.length).trim().split(" "); // This variable slices off the prefix, then puts the rest in an array based off the spaces
+  let cmd = args.shift().toLowerCase(); // This takes away the first object in the cont array, then puts it in this.
 
         try {
             let commandFile = require(`./commands/${cmd}.js`); // This will assign that filename to commandFile
