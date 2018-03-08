@@ -18,8 +18,8 @@ pika.on('ready', () => {
 // Listener Event: Runs whenever a message is received.
 pika.on('message', message => {
 
-    if (msg.content === 'ping') {
-    msg.reply('Pong!');
+    if (msg.content === 'hey!') {
+    msg.reply('listen!');
       
   // We want to make sure there is a GUILD, and it is not in DMs
   if (message.channel.type != 'text') return message.channel.send('Please use commands in the server!')
